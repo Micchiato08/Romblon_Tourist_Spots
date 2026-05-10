@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Login</title>
+    <style>
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #7eb3c6;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      #form-body {
+        background-color: antiquewhite;
+        padding: 30px;
+        border-radius: 10px;
+        max-width: 400px;
+        width: 100%;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      * {
+        text-align: center;
+      }
+
+      #radio-font {
+        color: azure;
+        margin: 15px 0;
+      }
+
+      p {
+        font-size: 20px;
+        color: black;
+        margin: 10px 0;
+      }
+
+      .labe {
+        color: black;
+        margin-right: 15px;
+      }
+
+      input[type="radio"] {
+        accent-color: green;
+      }
+
+      button[type="submit"] {
+        font-size: 15px;
+        padding: 8px 16px;
+        border: none;
+        border-radius: 5px;
+        background-color: #4caf50;
+        color: white;
+        cursor: pointer;
+        margin-top: 20px;
+        transition: background-color 0.3s;
+      }
+
+      button[type="submit"]:hover {
+        background-color: #45a049;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="form-body">
+      <form action="/splashpage.html" method="GET">
+        <h3
+          style="color: rgb(12, 130, 130); font-size: 30px; margin-bottom: 20px"
+        >
+          USER LOGIN
+        </h3>
+
+        <p style="color: rgb(12, 130, 130)">Email Address:</p>
+        <input type="email" name="email" placeholder="Enter Email" required />
+
+        <div>
+          <p style="color: rgb(12, 130, 130)">Password:</p>
+          <input
+            type="password"
+            name="password"
+            placeholder="Enter Password"
+            required
+          />
+        </div>
+
+        <div id="radio-font">
+          <input type="radio" id="filipino" name="type1" value="Old Student" />
+          <label for="filipino" class="labe">Filipino Citizen</label>
+          <input type="radio" id="foreigner" name="type1" value="Transferee" />
+          <label for="foreigner" class="labe">Foreigner</label>
+        </div>
+
+        <button type="submit">Login</button>
+        <hr />
+      </form>
+    </div>
+  </body>
+</html>

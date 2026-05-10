@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Romblon Adventure</title>
+    <style>
+      body {
+        background-color: antiquewhite;
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #7eb3c6;
+        padding: 20px 40px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        position: relative;
+        z-index: 1;
+      }
+      .logo-container {
+        display: flex;
+        align-items: center;
+      }
+      .logo {
+        display: flex;
+        align-items: center;
+        margin-right: 20px;
+      }
+      .header-title {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #fff;
+      }
+
+      nav {
+        display: flex;
+        gap: 20px;
+      }
+      nav a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: 500;
+        padding: 8px 12px;
+        border-radius: 4px;
+        transition:
+          background-color 0.3s,
+          color 0.3s;
+      }
+      nav a:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+      }
+      nav a:active {
+        background-color: #333;
+        color: #fff;
+      }
+
+      #row {
+        font-size: 30px;
+        font-weight: bold;
+        color: #263e4b;
+        text-align: center;
+        margin: 20px 0;
+      }
+
+      .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+      }
+      .gallery img {
+        width: 250px;
+        height: 700px;
+        object-fit: cover;
+        border-radius: 200px;
+        border: 4px solid wheat;
+        transition:
+          transform 0.3s,
+          box-shadow 0.3s;
+      }
+      .gallery a img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      }
+
+      @media (max-width: 600px) {
+        header {
+          flex-direction: column;
+          align-items: flex-start;
+          padding: 15px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo-container">
+        <div class="logo">
+          <div class="header-title">WELCOME TO ROMBLON!</div>
+        </div>
+      </div>
+      <nav>
+        <a href="splashpage.html">Home</a>
+        <a href="home.html">Discover</a>
+        <a href="/contacts.html">Contact</a>
+      </nav>
+    </header>
+
+    <section>
+      <h2 id="row">WHERE ADVENTURE MEETS PARADISE - ROMBLON</h2>
+      <div class="gallery">
+        <a href="/bonbon.html"><img src="/bonbon.jpg" alt="Bonbon" /></a>
+        <a href="cresta.html"
+          ><img src="/Cresta de Gallo.JPG" alt="Cresta de Gallo" />
+        </a>
+        <a href="guiting.html"><img src="/g2-1.webp" alt="Guiting" /></a>
+        <a href="tinago.html"><img src="/tinago2.webp" alt="Tinago" /></a>
+        <a href="cobrador.html"><img src="/Cobrador.jpg" alt="Cobrador" /></a>
+      </div>
+    </section>
+  </body>
+</html>

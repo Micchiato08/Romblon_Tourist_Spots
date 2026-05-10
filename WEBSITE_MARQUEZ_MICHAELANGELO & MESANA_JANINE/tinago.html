@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tinagong Dagat - Romblon</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        background-color: #c1d9e1;
+        width: 100%;
+      }
+
+      header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #7eb3c6;
+        padding: 20px 40px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        position: relative;
+        z-index: 1;
+      }
+      .logo-container {
+        display: flex;
+        align-items: center;
+      }
+      .logo {
+        display: flex;
+        align-items: center;
+        margin-right: 20px;
+      }
+      .header-title {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #fff;
+      }
+
+      nav {
+        display: flex;
+        gap: 20px;
+      }
+      nav a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: 500;
+        padding: 8px 12px;
+        border-radius: 4px;
+        transition:
+          background-color 0.3s,
+          color 0.3s;
+      }
+      nav a:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+      }
+      nav a:active {
+        background-color: #333;
+        color: #fff;
+      }
+
+      #para {
+        padding: 25px;
+        margin: 20px auto;
+        width: 90%;
+        max-width: 900px;
+        background: white;
+        border-radius: 15px;
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+        text-align: center;
+      }
+
+      #para h2 {
+        margin-top: 20px;
+        font-size: 2rem;
+        color: #333;
+      }
+
+      .gallery {
+        width: 450px;
+        height: 350px;
+        object-fit: cover;
+        border-radius: 15px;
+        border: 4px solid wheat;
+        transition:
+          transform 0.3s,
+          box-shadow 0.3s;
+        margin-bottom: 20px;
+      }
+
+      .gallery:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      }
+
+      @media (max-width: 600px) {
+        .gallery {
+          width: 100%;
+          height: auto;
+        }
+        header {
+          flex-direction: column;
+          align-items: flex-start;
+          padding: 15px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo-container">
+        <div class="logo">
+          <div class="header-title">WELCOME TO ROMBLON!</div>
+        </div>
+      </div>
+      <nav>
+        <a href="splashpage.html">Home</a>
+        <a href="home.html">Discover</a>
+        <a href="/contacts.html">Contact</a>
+      </nav>
+    </header>
+
+    <div id="para">
+      <a href="home.html">
+        <img src="/tinago1.webp" alt="Tinagong Dagat" class="gallery" />
+      </a>
+      <h2>TINAGONG DAGAT</h2>
+      <p>
+        Tinagong Dagat (meaning "Hidden Sea") specifically refers to a unique
+        saltwater lake located at Kabibihan Point in the municipality of
+        Calatrava on the northern tip of Tablas Island. It is composed of a main
+        semi-circular lake and a smaller second lake, both of which are
+        naturally carved into limestone rock formations and concealed by tall,
+        jagged cliffs. Because the entrance is hidden from the open sea, the
+        area remained a secret hideout for rebels during World War II before
+        becoming a scenic tourist destination.
+      </p>
+      <p>
+        The most distinctive feature of this site is its geological connection
+        to the ocean through underground channels, which creates a paradoxical
+        tidal phenomenon: when the tide is high in the surrounding sea, the
+        water level in the lake is low, and vice versa. While primarily visited
+        for its breathtaking limestone scenery and tranquil atmosphere, it is
+        also a popular spot for adventure seekers interested in cliff jumping
+        and island-hopping tours starting from the port of Calatrava.
+      </p>
+    </div>
+  </body>
+</html>

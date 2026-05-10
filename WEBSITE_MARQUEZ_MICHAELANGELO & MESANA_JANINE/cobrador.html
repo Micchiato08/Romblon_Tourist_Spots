@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Romblon Island</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        background-color: #c1d9e1;
+        width: 100%;
+      }
+
+      #para {
+        padding: 20px;
+        margin: 20px auto;
+        width: 90%;
+        max-width: 900px;
+        background: white;
+        border-radius: 15px;
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+        text-align: center;
+      }
+
+      img {
+        width: 100%;
+        max-width: 450px;
+        height: auto;
+        border-radius: 10px;
+        border: 4px solid wheat;
+        object-fit: cover;
+        transition:
+          transform 0.3s,
+          box-shadow 0.3s;
+      }
+
+      header {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #7eb3c6;
+        padding: 20px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      .logo-container {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+
+      .logo {
+        display: flex;
+        align-items: center;
+        margin-right: 20px;
+      }
+
+      .header-title {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #fff;
+        margin: 0;
+      }
+
+      nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+
+      nav a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: 500;
+        padding: 8px 12px;
+        border-radius: 4px;
+        transition:
+          background-color 0.3s,
+          color 0.3s;
+      }
+
+      nav a:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+      }
+
+      nav a:active {
+        background-color: #333;
+        color: #fff;
+      }
+
+      @media (max-width: 600px) {
+        header {
+          flex-direction: column;
+          align-items: flex-start;
+          padding: 15px;
+        }
+
+        .logo-container {
+          margin-bottom: 10px;
+        }
+
+        nav {
+          width: 100%;
+          justify-content: flex-start;
+        }
+
+        #para {
+          padding: 15px;
+        }
+
+        h2 {
+          font-size: 1.2rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo-container">
+        <div class="logo">
+          <div class="header-title">WELCOME TO ROMBLON!</div>
+        </div>
+      </div>
+      <nav>
+        <a href="splashpage.html">Home</a>
+        <a href="home.html">Discover</a>
+        <a href="/contacts.html">Contact</a>
+      </nav>
+    </header>
+
+    <div id="para">
+      <a href="home.html">
+        <img src="/corbardor2.jpg" alt="Cobrador Island" />
+      </a>
+      <h2>COBRADOR ISLAND</h2>
+      <p>
+        Cobrador Island, locally known as Naguso Island, is the northernmost and
+        largest of the three islets off the coast of Romblon. This tranquil,
+        300-hectare island is inhabited by a small fishing and farming community
+        and is celebrated for its untouched charm, featuring powdery white sand
+        beaches made of crushed coral, crystal-clear turquoise waters, and
+        thriving marine sanctuaries. It serves as a premier destination for
+        island hopping, snorkeling, and cliff jumping, offering a peaceful
+        escape far from heavy commercialization.
+      </p>
+    </div>
+  </body>
+</html>
